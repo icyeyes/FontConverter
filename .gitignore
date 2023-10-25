@@ -8,12 +8,12 @@ local braille = require("braille")
 
 local matrix = braille.matrix(320, 200)
 
-local font1 = ocbf.load("eBox", "Regular")
+local font1 = ocbf.load("eBox", "Regular-large")
 
 local function set(x, y, v)
   braille.set(matrix, x, y, v)
 end
 
-font1:draw(set, 64, "ZXC", 4, 1)
+font1:draw(set, 64, "ZXC", 4, 4)
 
 braille.render(matrix, 1, 1)
